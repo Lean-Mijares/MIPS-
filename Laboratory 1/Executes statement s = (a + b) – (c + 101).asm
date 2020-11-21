@@ -1,7 +1,7 @@
 #Title: CHP 2 LAB TASK 4           
 #Author: Lean Elizebette Mijares                            
 #Date: October 7, 2020
-#Description: Executes statement: s = (a + b) – (c + 101), where a, b, and c are user provided integer, and s is computed and printed as an output. 
+#Description: Executes statement: s = (a + b) â€“ (c + 101), where a, b, and c are user provided integer, and s is computed and printed as an output. 
 #Input: 5, 10, -30
 #Output: -56
 
