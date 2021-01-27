@@ -1,6 +1,4 @@
 #Title:  Converting character to upper/lower case    
-#Author: Lean Elizebette Mijares                            
-#Date: October 7, 2020
 #Description: asks the user to enter an alphabetic character and change the case of the character from lower to upper and from upper to lower.
 #Input: A
 #Output: a
