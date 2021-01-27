@@ -1,6 +1,4 @@
 #Title: CHP3 LAB TASK 7                    
-#Author: Lean Elizebette Mijares                            
-#Date: October 9, 2020
 #Description: Program that asks the user to enter an unsigned number and read it and swap the bits at odd positions with those at even positions and display the resulting number.
 #Input: 9
 #Output: 6
