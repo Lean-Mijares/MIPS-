@@ -1,6 +1,4 @@
 #Title: Display expression of computing expression A + 2B - 5.                  
-#Author: Lean Elizebette Mijares                            
-#Date: October 7, 2020
 #Description: ask the user to enter two integers A and B and then display the result of computing the expression: A + 2B - 5.
 #Input: 8, 10
 #Output: 23
