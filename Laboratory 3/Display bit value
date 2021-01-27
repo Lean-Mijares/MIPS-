@@ -1,6 +1,4 @@
 #Title:  Display bit value        
-#Author: Lean Elizebette Mijares                            
-#Date: October 8, 2020
 #Description: asks the user to enter an integer number then enter a bit position (between 0 and 31) and display the value of that bit.
 #Input: Integer: 5,  Bit Position: 0
 #Output: 1
