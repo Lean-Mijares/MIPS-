@@ -1,0 +1,63 @@
+#Title:  Converting character to upper/lower case    
+#Author: Lean Elizebette Mijares                            
+#Date: October 7, 2020
+#Description: asks the user to enter an alphabetic character and change the case of the character from lower to upper and from upper to lower.
+#Input: A
+#Output: a
+
+########################## Data Segment ####################################
+.data
+	data: .asciiz "Enter an alphabetic character: "
+	notalpha: .asciiz "\nNot alphabetic "
+	output_msg: .asciiz "\nConverted character: "
+	
+########################## Code Segment ####################################
+.text
+.globl main
+main:
+	li $v0, 4   
+	la $a0, data                       # main function entry 
+	syscall
+
+	li $v0, 12
+	syscall
+
+	move $s0,$v0
+	li $v0, 4   
+	la $a0, output_msg 
+	syscall
+
+	move $v0,$s0
+
+	move $a0,$v0
+	sge $s0,$v0,0x41 
+	sle $s1,$v0,0x5a
+	and $s0,$s0,$s1
+	bne $s0,1,checker
+	add $a0,$a0,32 
+
+	li $v0,11
+	syscall
+	j exit
+		
+	checker:
+	sge $s0,$v0,0x61 
+	sle $s1,$v0,0x7a
+	and $s0,$s0,$s1
+	bne $s0,1, notLatin 
+	sub $a0,$a0,32 
+	
+	li $v0,11
+	syscall
+
+	j exit
+
+	notLatin:
+	li $v0, 4   
+	la $a0, notalpha
+	syscall
+	j exit
+	
+	exit:
+	li $v0, 11
+	
