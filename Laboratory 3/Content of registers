@@ -1,6 +1,4 @@
 #Title: Content of registers              
-#Author: Lean Elizebette Mijares                            
-#Date: October 7, 2020
 #Description: Program to execute instructions and verify the content of registers $s3 to $s6.
 #Input: values of $s1, $s2
 #Output: values of $s3 to $s6
